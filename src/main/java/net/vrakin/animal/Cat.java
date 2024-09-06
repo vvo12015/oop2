@@ -36,4 +36,14 @@ public class Cat extends Animal {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                "ration='" + super.getRation() + '\'' +
+                ", color='" + super.getColor() + '\'' +
+                ", weight=" + super.getWeight() +
+                '}';
+    }
 }

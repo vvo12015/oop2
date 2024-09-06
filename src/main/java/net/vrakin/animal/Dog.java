@@ -38,4 +38,14 @@ public class Dog extends Animal {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "name='" + name + '\'' +
+                "ration='" + super.getRation() + '\'' +
+                ", color='" + super.getColor() + '\'' +
+                ", weight=" + super.getWeight() +
+                '}';
+    }
 }
